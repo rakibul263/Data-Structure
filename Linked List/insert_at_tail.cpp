@@ -39,9 +39,9 @@ void print_linked_list(Node *head)
 
 int main()
 {
-    Node *head = new Node(10);
-    Node *a = new Node(20);
-    Node *b = new Node(30);
+    Node *head = new Node(30);
+    Node *a = new Node(50);
+    Node *b = new Node(60);
     
     //connection
     head->next = a;
