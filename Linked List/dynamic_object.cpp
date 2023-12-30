@@ -19,7 +19,7 @@ int main()
     Node *a = new Node(20);
 
     //connection
-    head->next = a;
+    head->next = a; 
 
     //output print
     cout<<head->value<<endl;
