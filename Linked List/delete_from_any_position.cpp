@@ -13,22 +13,16 @@ public:
     }
 };
 
-void insert_at_any_position(Node *&head, int val, int position)
+void delete_from_any_position(Node *head, int position)
 {
-    Node *newNode = new Node(val);
-    // conner case
-    if (position == 0)
-    {
-        head = newNode;
-        return;
-    }
     Node *temp = head;
     for (int i = 1; i <= position - 1; i++)
     {
         temp = temp->next;
     }
-    newNode->next = temp->next;
-    temp->next = newNode;
+    Node *deleteNode = temp->next;
+    temp->next = temp->next->next;
+    delete deleteNode;
 }
 
 int size_calculate(Node *head)
@@ -37,12 +31,11 @@ int size_calculate(Node *head)
     while (head != NULL)
     {
         count++;
-        head = head->next;
     }
     return count;
 }
 
-void print_linked_list(Node *head)
+Node print_linked_list(Node *head)
 {
     Node *temp = head;
     while (temp != NULL)
@@ -59,27 +52,26 @@ int main()
     Node *a = new Node(20);
     Node *b = new Node(30);
     Node *c = new Node(40);
+    Node *d = new Node(50);
 
     // connection
     head->next = a;
     a->next = b;
     b->next = c;
+    c->next = d;
 
-    // insert at any position;
-    int val, position;
-    cout << "Enter a value and position: ";
-    cin >> val >> position;
-
+    // delete from any position
+    int position;
+    cout << "Enter a position : ";
+    cin >> position;
     int size = size_calculate(head);
-    // conner case
-    if (position > size)
-    {
-        cout << "Invalid Position" << endl;
-        return 0;
-    }
-
-    // function call
-    insert_at_any_position(head, val, position);
+    cout<<size<<endl;
+    // if (position > size)
+    // {
+    //     cout << "INVADLID POSITION" << endl;
+    //     return 0;
+    // }
+    delete_from_any_position(head, position);
     print_linked_list(head);
 
     return 0;

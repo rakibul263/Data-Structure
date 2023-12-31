@@ -32,9 +32,10 @@ void print_linked_list(Node *head)
     Node *temp = head;
     while (temp != NULL)
     {
-        cout << temp->value<<" ";
+        cout << temp->value << " ";
         temp = temp->next;
     }
+    cout << endl;
 }
 
 int main()
