@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 class Node
 {
 public:
@@ -28,14 +27,16 @@ void delete_from_any_position(Node *head, int position)
 int size_calculate(Node *head)
 {
     int count = 0;
-    while (head != NULL)
+    Node *temp = head;
+    while (temp != NULL)
     {
         count++;
+        temp = temp->next;
     }
     return count;
 }
 
-Node print_linked_list(Node *head)
+void print_linked_list(Node *head)
 {
     Node *temp = head;
     while (temp != NULL)
@@ -60,17 +61,18 @@ int main()
     b->next = c;
     c->next = d;
 
-    // delete from any position
     int position;
-    cout << "Enter a position : ";
+    cout << "Enter a position: "
+         << " ";
     cin >> position;
+
     int size = size_calculate(head);
-    cout<<size<<endl;
-    // if (position > size)
-    // {
-    //     cout << "INVADLID POSITION" << endl;
-    //     return 0;
-    // }
+    // cout<<size<<endl;
+    if (position > size)
+    {
+        cout << "INVALID POSITION" << endl;
+        return 0;
+    }
     delete_from_any_position(head, position);
     print_linked_list(head);
 
