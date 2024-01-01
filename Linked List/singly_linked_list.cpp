@@ -48,6 +48,14 @@ void insert_at_any_position(Node *head, int val, int position)
     for (int i = 0; i < position - 1; i++)
     {
         temp = temp->next;
+        if (temp == NULL)
+        {
+            cout << endl
+                 << endl
+                 << "Invalid Index" << endl
+                 << endl;
+            return;
+        }
     }
     newNode->next = temp->next;
     temp->next = newNode;
@@ -55,23 +63,50 @@ void insert_at_any_position(Node *head, int val, int position)
 
 void delete_head(Node *&head)
 {
+    if (head == NULL)
+    {
+        cout << endl
+             << endl
+             << "Head is not available !" << endl
+             << endl;
+        return;
+    }
     Node *deleteHead = head;
-    head=head->next;
+    head = head->next;
     delete deleteHead;
-    cout<<"Deleted Head"<<endl;
+    cout << "Deleted Head" << endl;
 }
 
 void delete_from_any_position(Node *head, int position)
 {
     Node *temp = head;
-    for(int i=0;i<position-1;i++)
+    for (int i = 0; i < position - 1; i++)
     {
         temp = temp->next;
+        if (temp == NULL)
+        {
+            cout << endl
+                 << endl
+                 << "Invalid Index" << endl
+                 << endl;
+            return;
+        }
     }
-    Node *deleteNode  = temp->next;
+    if (temp->next == NULL)
+    {
+        cout << endl
+             << endl
+             << "Invalid Index" << endl
+             << endl;
+        return;
+    }
+    Node *deleteNode = temp->next;
     temp->next = temp->next->next;
     delete deleteNode;
-    cout<<"Deleted"<<" "<<position<<" "<<"th position"<<endl<<endl;
+    cout << "Deleted"
+         << " " << position << " "
+         << "th position" << endl
+         << endl;
 }
 
 void print_linked_list(Node *head)
@@ -140,7 +175,7 @@ int main()
             insert_at_any_position(head, val, position);
         }
 
-        else if(op == 4)
+        else if (op == 4)
         {
             cout << endl
                  << endl
@@ -148,14 +183,14 @@ int main()
             delete_head(head);
         }
 
-        else if(op == 5)
+        else if (op == 5)
         {
             cout << endl
                  << endl
                  << "YOU CHOOSE - Option 4 : Delete from  position" << endl;
             int position;
-            cout<<"Enter delete index: ";
-            cin>>position;
+            cout << "Enter delete index: ";
+            cin >> position;
             delete_from_any_position(head, position);
         }
 
