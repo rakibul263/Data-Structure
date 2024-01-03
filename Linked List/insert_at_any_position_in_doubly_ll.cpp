@@ -85,7 +85,7 @@ int main()
     cin >> val >> pos;
     int size = size_cal(head);
 
-    if (pos > size)
+    if (pos >= size)
     {
         cout<<"Invalid Position"<<endl;
     }
