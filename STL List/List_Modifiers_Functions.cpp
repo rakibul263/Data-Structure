@@ -10,8 +10,12 @@ int main()
     // newlist.assign(mylist.begin(), mylist.end());
 
     //push
-    mylist.push_back(150);
-    mylist.push_front(60);
+    // mylist.push_back(150);
+    // mylist.push_front(60);
+    
+    //pop
+    mylist.pop_back();
+    mylist.pop_front();
 
 
     for(int val : mylist)
