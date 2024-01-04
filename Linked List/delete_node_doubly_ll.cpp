@@ -109,14 +109,28 @@ int main()
     int pos;
     cout << "Enter a positon for value Delete: ";
     cin >> pos;
-    if (pos == 0)
+    if (pos > size)
+    {
+        cout << "Invalid Position" << endl;
+    }
+    else if (pos == 0)
+    {
         delete_from_head(head, tail);
+        print_normal(head);
+        print_reverse(tail);
+    }
     else if (pos == size)
+    {
         delete_from_tail(head, tail);
+        print_normal(head);
+        print_reverse(tail);
+    }
     else
+    {
         delete_from_any_position(head, pos);
+        print_normal(head);
+        print_reverse(tail);
+    }
 
-    print_normal(head);
-    print_reverse(tail);
     return 0;
 }
