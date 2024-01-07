@@ -46,6 +46,5 @@ int main()
         cout << st.front() << endl;
         st.pop();
     }
-
     return 0;
 }
