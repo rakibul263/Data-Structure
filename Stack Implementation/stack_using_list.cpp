@@ -34,22 +34,20 @@ int main()
 {
     myStack st;
     int n;
-    cout << "Enter test Case: ";
-    cin >> n;
-    for (int i = 0; i < n; i++)
+    cout<<"Enter test Case: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
     {
         int x;
-        cout << "Enter Value " << i + 1 << " :";
-        cin >> x;
+        cout<<"Enter Value "<<i+1<<" :";
+        cin>>x;
         st.push(x);
     }
 
-    cout << endl
-         << endl
-         << "Top Stack list: " << endl;
-    while (!st.empty())
+    cout<<endl<<endl<<"Top Stack list: "<<endl;
+    while(!st.empty())
     {
-        cout << st.top() << endl;
+        cout<<st.top()<<endl;
         st.pop();
     }
 
