@@ -45,5 +45,41 @@ This repo shows the code for some basic data structures.
 
 ![Logo](https://www.springboard.com/blog/wp-content/uploads/2020/07/what-are-data-structures-and-algorithms.png)
 
-# Author
-Md. Rakibul Hasan
+<br clear="both">
+
+<h2 align="center">Author :</h2>
+
+###
+
+<h4 align="center">MD: RAKIUBL HASAN</h4>
+
+###
+
+<h4 align="center">B.Sc in Computer Science Engineering</h4>
+
+###
+
+<h4 align="center">Daffodil International University</h4>
+
+###
+
+<h4 align="left">Contact:</h4>
+
+###
+
+<div align="left">
+  <a href="https://www.facebook.com/rakibul13631/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="52" height="40" alt="facebook logo"  />
+  </a>
+  <a href="https://t.me/+8801303698204" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="telegram logo"  />
+  </a>
+  <a href="https://www.linkedin.com/in/rakibul263/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+  <a href="https://www.instagram.com/rakibul13631/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+  </a>
+</div>
+
+###
