@@ -22,7 +22,7 @@ void level_order(Node *root)
 
     while (!q.empty())
     {
-        //ber kore ante hbe
+        
         Node *f = q.front();
         q.pop();
 
