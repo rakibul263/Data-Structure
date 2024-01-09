@@ -38,10 +38,9 @@ int main()
     h->right = i;
     b->right = d;
     d->left = f;
-    d->right = g;
+    d->right = g;   
 
-
-
+    
 
     return 0;
 }
