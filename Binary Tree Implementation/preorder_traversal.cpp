@@ -15,6 +15,18 @@ public:
     }
 };
 
+void preorder(Node *root)
+{
+    //base case
+    if(root==NULL)
+    {
+        return;
+    }
+    cout<<root->value<<" ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
 int main()
 {
     //create Node
@@ -40,7 +52,8 @@ int main()
     d->left = f;
     d->right = g;   
 
-
+    //call
+    preorder(root);
 
     return 0;
 }
