@@ -28,7 +28,7 @@ Node *input_tree()
     {
         q.push(root);
     }
-    if (!q.empty())
+    while (!q.empty())
     {
         Node *parent = q.front();
         q.pop();
