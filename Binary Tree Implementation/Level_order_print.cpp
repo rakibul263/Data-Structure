@@ -17,21 +17,18 @@ public:
 
 void level_order(Node *root)
 {
-    queue<Node *> q;
+    queue<Node*>q;
     q.push(root);
-
-    while (!q.empty())
+    while(!q.empty())
     {
-        
         Node *f = q.front();
         q.pop();
 
         cout<<f->value<<" ";
 
-        if(f->left != NULL) q.push(f->left);
-        if(f->right != NULL) q.push(f->right);
+        if(f->left) q.push(f->left);//f->left means f->left != NULL
+        if(f->right) q.push(f->right);//f->right means f->right != NULL
     }
-
 }
 
 int main()
