@@ -55,8 +55,14 @@ Node *input_tree()
     }
     return root;
 }
+
 void level_order(Node *root)
 {
+    if (root == NULL)
+    {
+        cout<<"Tree not exit"<<endl;
+        return;
+    }
     queue<Node *> q;
     q.push(root);
     while (!q.empty())
