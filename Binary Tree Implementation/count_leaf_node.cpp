@@ -55,6 +55,6 @@ Node *input_tree()
 }
 int main()
 {
-
+    Node *root = input_tree();
     return 0;
 }
