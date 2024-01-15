@@ -7,7 +7,7 @@ int main()
     // cout<<mylist.max_size();
     mylist.resize(2);
     mylist.resize(5, 10);
-    cout<<mylist.size()<<endl;
+    cout << mylist.size() << endl;
     for (int val : mylist)
     {
         cout << val << " ";
