@@ -17,11 +17,12 @@ public:
 
 Node *convert(int a[], int n, int l, int r)
 {
-    if(l>r) return NULL;
+    if (l > r)
+        return NULL;
     int mid = (l + r) / 2;
     Node *root = new Node(a[mid]);
-    Node *leftRoot = convert(a, n, l, mid-1);
-    Node *rightRoot = convert(a, n, mid+1, r);
+    Node *leftRoot = convert(a, n, l, mid - 1);
+    Node *rightRoot = convert(a, n, mid + 1, r);
     root->left = leftRoot;
     root->right = rightRoot;
     return root;
@@ -29,17 +30,19 @@ Node *convert(int a[], int n, int l, int r)
 
 void level_order(Node *root)
 {
-    queue<Node*>q;
+    queue<Node *> q;
     q.push(root);
-    while(!q.empty())
+    while (!q.empty())
     {
         Node *f = q.front();
         q.pop();
 
-        cout<<f->value<<" ";
+        cout << f->value << " ";
 
-        if(f->left) q.push(f->left);//f->left means f->left != NULL
-        if(f->right) q.push(f->right);//f->right means f->right != NULL
+        if (f->left)
+            q.push(f->left); // f->left means f->left != NULL
+        if (f->right)
+            q.push(f->right); // f->right means f->right != NULL
     }
 }
 
