@@ -32,6 +32,7 @@ public:
         }
     }
 };
+
 int main()
 {
     int n;
