@@ -13,7 +13,16 @@ int main()
     // {
     //     cout<<it->first<<" "<<it->second<<endl;
     // }
-    cout << mp["Hasan"] << endl;
+    // cout << mp["Hasan"] << endl;
 
+    // found
+    if (mp.count("shuvo"))
+    {
+        cout << "Found" << endl;
+    }
+    else
+    {
+        cout << "NOT Found" << endl;
+    }
     return 0;
 }
