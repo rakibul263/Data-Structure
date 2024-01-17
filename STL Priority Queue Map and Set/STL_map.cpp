@@ -9,10 +9,11 @@ int main()
     mp.insert({"shuvo", 100});
     mp.insert({"Hasan", 34});
 
-    for (auto it = mp.begin(); it != mp.end(); it++)
-    {
-        cout<<it->first<<" "<<it->second<<endl;
-    }
-   
+    // for (auto it = mp.begin(); it != mp.end(); it++)
+    // {
+    //     cout<<it->first<<" "<<it->second<<endl;
+    // }
+    cout << mp["Hasan"] << endl;
+
     return 0;
 }
