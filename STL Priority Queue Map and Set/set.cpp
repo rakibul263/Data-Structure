@@ -12,10 +12,14 @@ int main()
         cin >> x;
         s.insert(x); // complexity O(logN)
     }
-    for (auto it = s.begin(); it != s.end(); it++)
-    {
-        cout << *it << " ";
-    }
+
+    //found or not found
+    if(s.count(1)) cout<<"Found";
+    else cout<<"Not Found";
+    // for (auto it = s.begin(); it != s.end(); it++)
+    // {
+    //     cout << *it << " ";
+    // }
 
     return 0;
 }
