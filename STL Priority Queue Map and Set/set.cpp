@@ -10,7 +10,7 @@ int main()
     {
         int x;
         cin >> x;
-        s.insert(x);
+        s.insert(x); // complexity O(logN)
     }
     for (auto it = s.begin(); it != s.end(); it++)
     {
