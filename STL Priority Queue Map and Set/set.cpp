@@ -14,7 +14,7 @@ int main()
     }
 
     //found or not found
-    if(s.count(1)) cout<<"Found";
+    if(s.count(1)) cout<<"Found";//O(logN)
     else cout<<"Not Found";
     // for (auto it = s.begin(); it != s.end(); it++)
     // {
