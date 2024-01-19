@@ -26,7 +26,7 @@ This repo shows the code for some basic data structures.
         *delete from any position
         *delete from head
 
-    STL Function
+    STL List
 
     Stack Implementation
         *stack using array
@@ -39,6 +39,24 @@ This repo shows the code for some basic data structures.
         *Queue Implementation using  singly linked list
         *Queue Implementation using  STL linked list
         *STL Queue
+    Binary Search Tree Implementation
+        *insert_BST
+        *search BST
+        *convert array to BST
+    Heap Implementation
+        *Delete From max heap
+        *delete from min heap
+        *input in max heap O(NlogN)
+        *insert max heap
+        *insert min heap
+    STL priority Queue Map and Set
+        *custom compare class
+        *priority queue min heap
+        *priority Queue max heap
+        *set
+        *STL map
+        *word count
+      
         
     
 
