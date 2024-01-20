@@ -1,4 +1,4 @@
-## Basic Data Structure with C++
+## Data Structure with C++
 
 # Project Title
 
